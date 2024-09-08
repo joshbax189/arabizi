@@ -1,3 +1,34 @@
+;;; arabizi.el --- Quail package for Arabizi style Arabic input -*- lexical-binding: t -*-
+
+;; Author: Josh Bax (joshbax189@gmail.com)
+;; Maintainer: Josh Bax
+;; Version: 0.0.1
+;; Package-Requires: ((emacs "29"))
+;; Homepage: https://github.com/joshbax189/arabizi
+;; Keywords: input-method, arabic
+
+;; This file is not part of GNU Emacs
+
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+;;; Commentary:
+
+;; See https://en.wikipedia.org/wiki/Arabic_chat_alphabet.
+
+;;; Code:
+
 ;; M-x eval-buffer to load the package.
 ;; Then M-x set-input-method and select arabizi to use it.
 ;; Do eval-buffer again each time you make a change.
@@ -100,5 +131,8 @@
  ("è" ?ا)
  ("é" ["ي" "ى"])
  ("é" ?ة)
- ("é" ?ه)
- )
+ ("é" ?ه))
+
+(provide 'arabizi)
+
+;;; arabizi.el ends here
